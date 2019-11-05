@@ -1,0 +1,45 @@
+body{
+     
+	 background:#4d0019;
+	
+	 
+}
+.wrapper
+{
+	 background-image: url("../images/car.jpg");
+    
+	 background-repeat: no-repeat;
+	 background-size: cover;
+	/* opacity: 0.5;
+	 background-blend-mode: lighten;*/
+}
+.inner
+{ 
+	text-align: center;
+	font-family: Segoe UI;
+	font-weight: bold;
+}
+/*.text_op
+{
+	background-color: #ffffff;
+	border: 1px solid black;
+	opacity: 0.4;
+
+}*/ 
+.box
+{
+	overflow-y:scroll; 
+	height:150px;
+	width: 50%;
+	border: 5px solid grey ;
+	margin: auto;
+	background-color: lightgrey;
+	text-align: justify;
+	padding-left: 20px;
+	font-weight: normal;
+}
+.actions
+{
+	
+}
+

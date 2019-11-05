@@ -1,0 +1,73 @@
+body
+{
+     background:#4d0019;
+     
+	 /*opacity: 0.5;**/
+}
+.member
+{
+	background-image: url("../images/mem.jpg");
+	 background-repeat: no-repeat;
+	 background-size: cover;
+	 padding: 20px;
+
+}
+
+.month
+{
+	height:420px;
+	width: 250px;
+	border: 5px solid grey ;
+	margin-left: 40px;
+	background-color: lightgrey;
+	text-align: center;
+	padding: 20px;
+	font-weight: normal;
+}
+.quarter
+{
+	height:420px;
+	width: 250px;
+	border: 5px solid grey ;
+	/*margin-left: 300px;*/
+	background-color: lightgrey;
+	text-align: center;
+	padding: 20px;
+	font-weight: normal;
+}
+.half
+{
+	height:420px;
+	width: 250px;
+	border: 5px solid grey ;
+	/*margin-left: 300px;*/
+	background-color: lightgrey;
+	text-align: center;
+	padding: 20px;
+	font-weight: normal;
+}
+.year
+{
+	height:420px;
+	width: 250px;
+	border: 5px solid grey ;
+	/*margin-left: 300px;*/
+	background-color: lightgrey;
+	text-align: center;
+	padding: 20px;
+	font-weight: normal;
+}
+.sub
+{
+	height:100px;
+	width: 500px;
+	border: 5px solid grey ;
+	margin:auto;
+	font-size: 26px;
+	background-color: #7fffd4;
+	text-align: center;
+	font-weight: bold;
+	padding: 20px;
+
+
+}

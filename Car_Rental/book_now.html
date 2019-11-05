@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title></title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/book_now.css"/>
+
+	<script>
+ 		/*function disableSubmit()
+ 		{
+  			document.getElementById("submit").disabled = true;
+ 		}*/
+		function activateButton(element) 
+		{
+			document.getElementById("submit").disabled = true;
+			if(element.checked)
+			{
+        		document.getElementById("submit").disabled = false;
+       		}
+       		else
+       		{
+        		document.getElementById("submit").disabled = true;
+     		}
+
+ 		}
+	</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+	
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="index.html">ZapCars</a>
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navb">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href=""></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="javascript:void(0)"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="javascript:void(0)">Profile</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+      <button class="btn btn-success my-2 my-sm-0" type="button">Search</button>
+    </form>
+  </div>
+</nav>
+<section id="three" class="wrapper">
+						<div class="inner">
+							<section class="text_op">
+						<h1 style="font-size: 30px;font-family: Comic Sans;">Book Now</h1>
+							<p>The road ahead may be long and winding but you’ll make it there safe and sound.</p>
+							<div class="split style1">
+								
+									<form method="post" action="#"> <!--onsubmit="if(document.getElementById('terms').checked) { return true; } else { alert('Please indicate that you have read and agree to the Terms and Conditions and Privacy Policy'); return false; }">-->
+										<div class="fields">
+											<div class="field half">
+												<label for="vehicle-type">Select Vehicle Type</label>
+
+												<select name="vehicle-type" id="vehicle-type" required>
+													<option value="">- Vehicle Type -</option>
+													<option value="1">Mini</option>
+													<option value="2">Economy</option>
+													<option value="3">Premium</option>
+													<option value="4">Luxury</option>
+													<!--<option value="5">Luxury</option>-->
+												</select>
+											</div><br>
+											<div class="field half">
+												<label for="fromCity">From </label>
+													<input type="text" name="from-loc" title="Start typing city" id="from-loc" required />
+												<label>&nbsp;&nbsp;&nbsp;</label>
+
+						
+												<label for="toCity">To </label>
+													<input type="text" name="to-loc" title="Start typing city" id="to-loc" required />
+											</div><br>
+
+											<div class="field half">
+												<label for="pick-up">Pick Up</label>
+													<input type="date" name="pick-up" id="pick-up" required />
+
+												<label>&nbsp;&nbsp;&nbsp;</label>
+											
+												<label for="return">Return</label>
+													<input type="date" name="return" id="return" required />
+											</div><br>
+
+											<div class="field half">
+												<label for="pick-time">Pick Up Time</label>
+												<input type="time" name="pick-time" id="pick-time" required />
+											</div>
+											<div class="field half text-right">
+												<label>&nbsp;</label>
+											</div> 
+										
+
+											<div class="field">
+												<label for="name">Name</label>
+												<input type="text" name="name" pattern="[A-Za-z]+"id="name" required />
+											</div><br>
+
+											<div class="field half">
+												<label for="email">Email</label>
+												<input type="Email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" id="email" required />
+											</div><br>
+
+											<div class="field half">
+												<label for="phone">Phone</label>
+												<input type="text" name="phone" pattern="[789][0-9]{9}" id="phone" required />
+											</div>
+											<div class="field half text-right">
+												<label>&nbsp;</label>
+											</div>
+
+											<h3>Terms and Conditions</h3>
+											<div class="box">
+												
+												<p>1 - Insurance does not cover for loss or damages of rental vehicle keys, Insurance does not cover for broken glass due to chipped or smashed windows.<br>
+												2 - The lessee shall at his cost return the vehicle to Car Rental with a full fuel tank at the agreed return time/date specified Rs.700 will be deducted as a deposit for fuel/petrol.<br>
+												3 - Extended period means, any period spanning beyond the rental period for 24 hours for which the vehicle is not returned to Car rental on time.<br>
+												4 - The rental period means; the period from the time and date the lessee takes possession of the vehicle until its return to Car Rental.<br>
+												5 - The vehicle shall be the sole risk of the lessee throughout the rental period. </p>
+												<input type="checkbox" name="terms" id="terms" onchange="activateButton(this)" required> I accept Terms and Conditions.	
+												
+											</div>
+
+											<center>
+											<div class="field half text-right">
+												<label>&nbsp;</label>
+
+												<div class="actions" >
+													<input type="submit" name="submit" id="submit" value="Confirm" disabled="" style="height:50px;width: 125px;cursor: pointer;font-size: 20px;" onclick="pop_fun()"><br><br><br>
+													<script>
+														function pop_fun(){
+															alert("Booking Confirmed");
+														}
+													</script>
+												</div>
+											</div>
+											</center>
+										</div>
+									</form>
+																
+							</div>
+							</section>
+
+						</div>
+					</section>
+<div id="footer">
+  <!-- Footer -->
+<footer class="page-footer font-small bg-dark" style="color: white;">
+
+  <!-- Footer Links -->
+  <div class="container">
+
+    <!-- Grid row-->
+    <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mb-3">
+        <h6 class="text-uppercase font-weight-bold">
+          <a href="#!" id="a" style="color: white;">About us</a>
+        </h6>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 mb-3">
+        <h6 class="text-uppercase font-weight-bold">
+          <a href="CarsList.html" id="a" style="color: white;">Products</a>
+        </h6>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 mb-3">
+        <h6 class="text-uppercase font-weight-bold">
+          <a href="#!" id="a" style="color: white;">Policies</a>
+        </h6>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 mb-3">
+        <h6 class="text-uppercase font-weight-bold">
+          <a href="#!" id="a" style="color: white;">FAQ</a>
+        </h6>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 mb-3">
+        <h6 class="text-uppercase font-weight-bold">
+          <a href="#!" id="a" style="color: white;">Contact</a>
+        </h6>
+      </div>
+      <!-- Grid column -->
+      <div class="col-md-2 mb-3">
+        <h6 class="text-uppercase font-weight-bold">
+          <a href="#!" id="a" style="color: white;">Feedback</a>
+        </h6>
+      </div>
+    </div>
+    <hr class="rgba-white-light" style="margin: 0 15%;">
+    <div class="row d-flex text-center justify-content-center">
+      <div class="col-md-8 col-12 mt-5">
+        
+      </div>
+    </div>
+    <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
+    <center>
+    <div class="row pb-3 pt-3">
+      <div class="col-md-12">
+        <div class="mb-5 flex-center">
+          <a class="fb-ic">
+            <i class="fab fa-facebook-f fa-lg white-text mr-4"> </i>
+          </a>
+          <a class="tw-ic">
+            <i class="fab fa-twitter fa-lg white-text mr-4"> </i>
+          </a>
+          <a class="gplus-ic">
+            <i class="fab fa-google-plus-g fa-lg white-text mr-4"> </i>
+          </a>
+          <a class="li-ic">
+            <i class="fab fa-linkedin-in fa-lg white-text mr-4"> </i>
+          </a>
+          <a class="ins-ic">
+            <i class="fab fa-instagram fa-lg white-text mr-4"> </i>
+          </a>
+          <a class="pin-ic">
+            <i class="fab fa-pinterest fa-lg white-text"> </i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </center>
+  </div>
+</footer>
+<!-- Footer -->
+</div>
+
+
+</body>
+</html>
